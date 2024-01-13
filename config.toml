@@ -1,6 +1,6 @@
 base_url = "https://blog.giridharan.me"
 compile_sass = false
-title = "giridharan's blog"
+title = "Giri's blogs"
 description = "Blog"
 build_search_index = false
 default_language = "en"
