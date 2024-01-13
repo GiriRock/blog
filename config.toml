@@ -1,0 +1,24 @@
+base_url = "https://blog.giridharan.me"
+compile_sass = false
+title = "giridharan's blog"
+description = "Blog"
+build_search_index = false
+default_language = "pt"
+
+taxonomies = [
+    {name = "categories", rss = true},
+    {name = "tags", rss = true},
+]
+
+[extra]
+author = "Giri"
+disqus_username = ""
+ganalytics = ""
+nasm_menu = [
+    {url = "$BASE_URL", name = "Home", fawesome = "fas fa-home"},
+    {url = "$BASE_URL/categories", name = "Categories", fawesome = "fas fa-folder-open"},
+    {url = "$BASE_URL/tags", name = "Tags", fawesome = "fas fa-tag" },
+    {url = "https://giridharan.me", name = "Giri", fawesome = "fas fa-user-alt" },
+
+]
+nasm_title = "Blogs"

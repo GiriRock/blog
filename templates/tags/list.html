@@ -1,0 +1,17 @@
+{% extends "index.html" %}
+
+{% block content %}
+    {% block header %}
+        {{ super() }}
+    {% endblock header %}
+
+    <h2 class="titles"> [ Tags ] </h2>
+
+    {% if terms %}
+        <ul class="list-tc">
+            {% for term in terms %}
+                <li><span class="fas fa-tag"></span><a href="{{ term.permalink | safe }}">{{ term.name }} </a>  <span class="badge"> ({{ term.pages | length }})</span></li>
+            {% endfor %}
+        </ul>
+    {% endif %}
+{% endblock content %}

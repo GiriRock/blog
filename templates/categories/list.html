@@ -1,0 +1,19 @@
+{% extends "index.html" %}
+
+{% block content %}
+    {% block header %}
+        {{ super() }}
+    {% endblock header %}
+
+    <h2 class="titles"> [ Categories ]</h2>
+
+    {% if terms %}
+        <ul class="list-tc">
+            {% for term in terms %}
+                <li>
+                    <i class="fas fa-folder-open"></i> <a href="{{ term.permalink | safe }}">{{ term.name }}  </a><span class="badge">({{ term.pages | length }})</span> 
+                </li>
+            {% endfor %}
+        </ul>
+    {% endif %}
+{% endblock content %}
