@@ -3,7 +3,8 @@ compile_sass = false
 title = "giridharan's blog"
 description = "Blog"
 build_search_index = false
-default_language = "pt"
+default_language = "en"
+
 
 taxonomies = [
     {name = "categories", rss = true},
